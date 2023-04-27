@@ -1,0 +1,25 @@
+[begin] (Fluxbox)
+   [submenu] (Applications) {}
+      [exec] (IntelliJ IDEA) { /home/experience/idea/bin/idea.sh } <>
+      [exec] (Bash) { x-terminal-emulator -T "Bash" -e /bin/bash --login} <>
+      [submenu] (System) {}
+         [exec] (Xkill) {xkill} <>
+         [submenu] (Monitoring) {}
+            [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+         [end]
+      [end]
+   [end]
+
+   [config] (Configuration)
+   [submenu] (Styles) {}
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+   [workspaces] (Workspaces)
+   [reconfig] (Reconfigure)
+   [exit] (Exit)
+
+[end]
+

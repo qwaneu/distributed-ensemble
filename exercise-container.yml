@@ -1,0 +1,14 @@
+version: '3'
+services:
+    exercise_desktop:
+        build: ${language}
+        user: ${MY_UID}:${MY_GID}
+        environment:
+          - DISPLAY_WIDTH=1600
+          - HEIGHT_DISPLAY=968
+          - RUN_XTERM=yes
+        ports:
+          - 8079:8080
+        volumes:
+          - ${CURDIR}:/home/experience/exercise-dir
+    
