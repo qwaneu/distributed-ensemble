@@ -65,11 +65,11 @@ Changing directory is intentional, so that you can use exercises outside this re
 
 The script builds the dockerfile in the specified directory, e.g. `java-intellij`. We do this instead of using an image to keep building this simple. After building, it starts a docker container with a webserver. Open a chrome-based browser on [http://localhost:8079/vnc.html](http://localhost:8079/vnc.html]) and you should see a webpage with a 'Connect' button. Click that button, and you have a linux desktop in a browser tab.
 
-![Fluxbox desktop with IntelliJ community edition terms and conditions dialog.](/Users/willem/MyDocuments/qwan/infra/open-ensemble-desktop/doc/vnc-open-project.png)
+![Fluxbox desktop with IntelliJ community edition terms and conditions dialog.](./doc/vnc-open-project.png)
 
 After agreeing the terms and conditions, you can create a new project, or write your first test in the sample project. Open `/home/experience/exercise-dir/FirstTest`. And you should see a project, with `FirstTest` inside the `test` folder. Running the test should produce a failure.
 
-![Screenshot of IntelliJ with a failing test](/Users/willem/MyDocuments/qwan/infra/open-ensemble-desktop/doc/firsttest-shouldfail.png)
+![Screenshot of IntelliJ with a failing test](./doc/firsttest-shouldfail.png)
   
 A test failure is progress. Happy hacking!
 
