@@ -1,8 +1,5 @@
 ## The Distributed Ensemble - code together in a browser
 
-``` 
-```
-
 Container setup to program together apart, in the browser.
 
 ## Why
@@ -54,14 +51,14 @@ This yields a docker image tagged `qwan/desktop`.
 
 ## Usage
 
-The exercise-desktop script allows you to develop locally, while running
+The distributed-ensemble script allows you to develop locally, while running
 the environment in the browser.
 
 Example for the java version 
 
 ``` sh
 cd exercises/java/ \$
-../../exercise-desktop java-intellij
+../../distributed-ensemble java-intellij
 ```
 
 Changing directory is intentional, so that you can use exercises outside this repository to work on, for instance when developing a new exercise.
