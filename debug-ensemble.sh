@@ -7,9 +7,6 @@ usage() {
 
 # bash strict mode, plus print each line as it executes
 set -x
-set -uo pipefail
-trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
-IFS=$'\n\t'
 
 export language=$1
 [[ "$language" == "" ]] && usage
