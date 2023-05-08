@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export DOCKER_BUILDKIT=0
+
 cd desktop-base && ./build.sh
 cd ../java-intellij && ./build.sh
 cd ../environments/demo && ./build.sh
